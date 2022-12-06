@@ -12,26 +12,42 @@ void PlaceBlock(char field[height][width], int playerCoords[2], int &Resources)
 	switch (PlaceDirection)
 	{
 	case 'w':
+	case 'W':
 	{
 		x -= 1;
-		field[x][y] = block;
+		if (field[x][y] != block) {
+			field[x][y] = block;
+		}
+		else Resources++;
 		break;
 	}
 	case 'd':
+	case 'D':
 	{
 		y += 1;
-		field[x][y] = block;
+		if (field[x][y] != block) {
+			field[x][y] = block;
+		}
+		else Resources++;
 		break;
 	}
 	case 's':
+	case 'S':
 	{
 		x += 1;
-		field[x][y] = block;
+		if (field[x][y] != block) {
+			field[x][y] = block;
+		}
+		else Resources++;
 		break;
 	case 'a':
+	case 'A':
 	{
 		y -= 1;
-		field[x][y] = block;
+		if (field[x][y] != block) {
+			field[x][y] = block;
+		}
+		else Resources++;
 		break;
 	}
 	default:

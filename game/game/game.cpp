@@ -58,6 +58,7 @@ int main()
 		switch (playerAction)
 		{
 		case 'q':
+		case 'Q':
 		{
 			if (RCounter > 0){
 			PlaceBlock(field, playerCoords, RCounter);
@@ -66,6 +67,7 @@ int main()
 			break;
 		}
 		case 'e':
+		case 'E':
 		{
 			EarnBlock(field, playerCoords, RCounter);
 			break;
