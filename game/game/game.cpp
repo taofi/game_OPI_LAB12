@@ -36,6 +36,7 @@ void CreateField(char field[height][wieght])
 }
 int main()
 {
+
 	SetConsoleOutputCP(1251);
 	SetConsoleCP(1251);
 	srand(time(0));
