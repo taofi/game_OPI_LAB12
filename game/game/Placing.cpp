@@ -2,12 +2,13 @@
 #define height 26
 #define block '='
 
-void PlaceBlock(char field[height][width], int playerCoords[2])
+void PlaceBlock(char field[height][width], int playerCoords[2], int &Resources)
 	{
 	char PlaceDirection;
 	std::cin >> PlaceDirection;
 	int x = playerCoords[0];
 	int y = playerCoords[1];
+	if (Resources > 0) {
 	switch (PlaceDirection)
 	{
 	case 'w':
@@ -35,6 +36,7 @@ void PlaceBlock(char field[height][width], int playerCoords[2])
 	}
 	default:
 		break;
+	}
 	}
 	}
 }
