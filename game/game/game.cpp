@@ -37,12 +37,12 @@ int main()
 	SetConsoleOutputCP(1251);
 	SetConsoleCP(1251);
 	char field[height][wieght];
-	int playerChords[2] = { height / 2, wieght / 2 };
+	int playerCoords[2] = { height / 2, wieght / 2 };
 	char playerAction;
 	CreateField(field);
 	while (true)
 	{ 
-		field[playerChords[0]][playerChords[1]] = player;
+		field[playerCoords[0]][playerCoords[1]] = player;
 		Draw(field);
 		Sleep(0);
 		cin >> playerAction;
