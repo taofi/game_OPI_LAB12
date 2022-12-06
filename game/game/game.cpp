@@ -1,7 +1,7 @@
 ﻿#include <iostream>
 #include <stdio.h>
 #include <windows.h>
-
+#include "Placing.cpp"
 
 #define wieght 25
 #define height 26
@@ -46,6 +46,13 @@ int main()
 		Draw(field);
 		Sleep(0);
 		cin >> playerAction;
+		switch (playerAction)
+		{
+		case 'q':
+		{
+			PlaceBlock(field, playerCoords);
+		}
+		}
 	}
 	
 
