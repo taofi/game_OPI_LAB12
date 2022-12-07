@@ -15,7 +15,7 @@ void PlaceBlock(char field[height][width], int playerCoords[2], int &Resources)
 	case 'W':
 	{
 		x -= 1;
-		if (field[x][y] != block) {
+		if (field[x][y] == ' ') {
 			field[x][y] = block;
 		}
 		else Resources++;
@@ -25,7 +25,7 @@ void PlaceBlock(char field[height][width], int playerCoords[2], int &Resources)
 	case 'D':
 	{
 		y += 1;
-		if (field[x][y] != block) {
+		if (field[x][y] == ' ') {
 			field[x][y] = block;
 		}
 		else Resources++;
@@ -35,7 +35,7 @@ void PlaceBlock(char field[height][width], int playerCoords[2], int &Resources)
 	case 'S':
 	{
 		x += 1;
-		if (field[x][y] != block) {
+		if (field[x][y] == ' ') {
 			field[x][y] = block;
 		}
 		else Resources++;
@@ -44,7 +44,7 @@ void PlaceBlock(char field[height][width], int playerCoords[2], int &Resources)
 	case 'A':
 	{
 		y -= 1;
-		if (field[x][y] != block) {
+		if (field[x][y] == ' ') {
 			field[x][y] = block;
 		}
 		else Resources++;
