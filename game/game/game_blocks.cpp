@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 #include <ctime>
 #include <iostream>
 #include <stdio.h>
@@ -14,4 +14,3 @@ void blocks(char field[height][wieght]) {
     field[blockY][blockX] = '*';
 
 }
->>>>>>> c979d8c0cf485174880ae20121af0c25cd91af40
