@@ -3,12 +3,15 @@
 #include <windows.h>
 #include "Placing.cpp"
 
+
 #define wieght 25
 #define height 26
 #define player '†'
 #define border '#'
 
 using namespace std;
+
+void blocks(char field[height][wieght]);
 
 void Draw(char field[height][wieght])
 {
