@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include <windows.h>
 #include "Placing.cpp"
-#include "game_blocks.cpp"
 #include "move.cpp"
 #include "earn.cpp"
 
@@ -48,7 +47,7 @@ int main()
 	char playerAction;
 	int RCounter = 0;
 	CreateField(field);
-	for (int i = 0; i < 4; i++) {
+	for (int i = 0; i < 20; i++) {
 		blocks(field);
 	}
 	while (true)
