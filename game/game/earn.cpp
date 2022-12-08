@@ -6,7 +6,7 @@ void EarnBlock(char field[height][width], int playerCoords[2], int &Resources)
 {
 	
 	char EarnDirection;
-	std::cin >> EarnDirection;
+	EarnDirection = _getch();
 	int x = playerCoords[0];
 	int y = playerCoords[1];
 	switch (EarnDirection)

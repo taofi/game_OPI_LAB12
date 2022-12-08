@@ -1,9 +1,11 @@
 ﻿#include <iostream>
 #include <stdio.h>
+#include <conio.h>
 #include <windows.h>
 #include "Placing.cpp"
 #include "move.cpp"
 #include "earn.cpp"
+#include "game_blocks.cpp"
 
 
 #define wieght 25
@@ -56,7 +58,7 @@ int main()
 		field[0][0] = RCounter + 48;
 		Draw(field);
 		Sleep(0);
-		cin >> playerAction;
+		playerAction = _getch();
 		switch (playerAction)
 		{
 		case 'q':

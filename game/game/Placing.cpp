@@ -5,7 +5,7 @@
 void PlaceBlock(char field[height][width], int playerCoords[2], int &Resources)
 	{
 	char PlaceDirection;
-	std::cin >> PlaceDirection;
+	PlaceDirection = _getch();
 	int x = playerCoords[0];
 	int y = playerCoords[1];
 	if (Resources > 0) {
