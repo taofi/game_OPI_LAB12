@@ -5,7 +5,6 @@
 #include "Placing.cpp"
 #include "move.cpp"
 #include "earn.cpp"
-#include "game_blocks.cpp"
 
 
 #define wieght 25
